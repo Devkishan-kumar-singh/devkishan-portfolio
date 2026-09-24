@@ -71,7 +71,7 @@ nav a:hover { color: var(--blue); }
 .portrait-card { position: relative; max-width: 430px; margin-left: auto; padding: 14px; border-radius: 34px; transform: rotate(1.5deg); }
 .portrait-card::before { content: ""; position: absolute; inset: 44px -15px -16px 50px; z-index: -1; border-radius: 36px; border: 1px solid #bfeef2; background: linear-gradient(145deg, rgba(196,243,248,.55), rgba(209,226,255,.25)); transform: rotate(-5deg); }
 .portrait-card img { width: 100%; height: 470px; object-fit: cover; object-position: center 20%; border-radius: 23px; filter: saturate(.87) contrast(1.02); }
-.portrait-label { position: absolute; z-index: 2; left: -42px; top: 52px; padding: 13px 17px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.8); border-radius: 16px; background: rgba(255,255,255,.9); backdrop-filter: blur(18px); box-shadow: 0 16px 42px rgba(31,65,112,.16); transform: rotate(-2deg); }
+.portrait-label { position: relative; z-index: 2; width: fit-content; max-width: 100%; margin: 0 0 12px 4px; padding: 13px 17px; display: flex; flex-direction: column; border: 1px solid rgba(255,255,255,.8); border-radius: 16px; background: rgba(255,255,255,.9); backdrop-filter: blur(18px); box-shadow: 0 12px 30px rgba(31,65,112,.12); }
 .portrait-label span { color: #8290a5; text-transform: uppercase; letter-spacing: .12em; font-size: 9px; font-weight: 800; }
 .portrait-label strong { color: #1e365c; font-size: 13px; }
 .portrait-footer { height: 56px; display: flex; align-items: center; justify-content: space-between; padding: 0 7px; color: #8a95a7; font-size: 11px; }
@@ -222,7 +222,7 @@ footer p { margin: 0; }
   .portrait-card { width: 100%; padding: 10px; border-radius: 28px; transform: none; }
   .portrait-card::before { inset: 34px 0 -12px 28px; border-radius: 28px; transform: rotate(-2deg); }
   .portrait-card img { height: min(112vw, 480px); border-radius: 20px; }
-  .portrait-label { left: 0; top: 28px; max-width: calc(100% - 32px); }
+  .portrait-label { width: 100%; margin: 0 0 10px; padding: 12px 14px; }
   .metrics { grid-template-columns: repeat(2, 1fr); }
   .metrics div { padding: 17px 8px; }
   .metrics div:nth-child(2) { border-right: 0; }
